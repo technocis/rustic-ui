@@ -1,0 +1,44 @@
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.button--small {
+  font-size: 0.75rem;
+}
+
+.button--medium {
+  font-size: 1rem;
+}
+
+.button--big {
+  font-size: 1.25rem;
+}
+
+.button--primary {
+  background-color: var(--primary-bg);
+  color: var(--primary);
+}
+
+.button--primary:focus {
+  outline: 2px solid var(--primary);
+}
+
+.button--secondary {
+  background-color: var(--secondary-bg);
+  color: var(--secondary);
+}
+
+.button--secondary:focus {
+  outline: 2px solid var(--secondary);
+}
+
+.button--danger {
+  background-color: var(--danger);
+  color: #fff;
+}
+
+.button--danger:focus {
+  outline: 2px solid var(--danger-light);
+}

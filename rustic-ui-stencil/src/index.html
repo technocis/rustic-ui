@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <style>
+      :root {
+        --hsl-h: 207;
+        --hsl-s: 90%;
+        --hsl-l: 54%;
+
+        --primary: hsl(var(--hsl-h), var(--hsl-s), var(--hsl-l));
+
+        --primary-light: hsl(var(--hsl-h), var(--hsl-s), calc(var(--hsl-l) + (100% - var(--hsl-l)) * 0.9));
+        --primary-dark: hsl(var(--hsl-h), var(--hsl-s), calc(var(--hsl-l) * 0.7));
+
+        --primary-bg: hsl(var(--hsl-h), var(--hsl-s), 98%);
+        --primary-text: hsl(var(--hsl-h), var(--hsl-s), calc(var(--hsl-l) * 0.4));
+
+        --hsl2-h: 258;
+        --hsl2-s: 90%;
+        --hsl2-l: 66%;
+
+        --secondary: hsl(var(--hsl2-h), var(--hsl2-s), var(--hsl2-l));
+
+        --secondary-light: hsl(var(--hsl2-h), var(--hsl2-s), calc(var(--hsl2-l) + (100% - var(--hsl2-l)) * 0.9));
+        --secondary-dark: hsl(var(--hsl2-h), var(--hsl2-s), calc(var(--hsl2-l) * 0.7));
+
+        --secondary-bg: hsl(var(--hsl2-h), var(--hsl2-s), 98%);
+        --secondary-text: hsl(var(--hsl2-h), var(--hsl2-s), calc(var(--hsl2-l) * 0.4));
+
+        --hsl3-h: 0;
+        --hsl3-s: 84%;
+        --hsl3-l: 60%;
+
+        --danger: hsl(var(--hsl3-h), var(--hsl3-s), var(--hsl3-l));
+
+        --danger-light: hsl(var(--hsl3-h), var(--hsl3-s), calc(var(--hsl3-l) + (100% - var(--hsl3-l)) * 0.9));
+        --danger-dark: hsl(var(--hsl3-h), var(--hsl3-s), calc(var(--hsl3-l) * 0.7));
+
+        --danger-bg: hsl(var(--hsl3-h), var(--hsl3-s), 98%);
+        --danger-text: hsl(var(--hsl3-h), var(--hsl3-s), calc(var(--hsl3-l) * 0.4));
+      }
+    </style>
+
+    <script type="module" src="/build/rustic-ui-stencil.esm.js"></script>
+    <script nomodule src="/build/rustic-ui-stencil.js"></script>
+  </head>
+  <body>
+    <cis-button text="Primary Small" color="primary" size="small"></cis-button>
+    <cis-button text="Secondary Medium" color="secondary"></cis-button>
+    <cis-button text="Danger Big" color="danger" size="big"></cis-button>
+  </body>
+</html>
